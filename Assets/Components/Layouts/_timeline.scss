@@ -1,0 +1,60 @@
+.timeline-area {
+  .timeline-list {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 100%;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $primary-color;
+    }
+    li {
+      position: relative;
+      clear: both;
+      overflow: hidden;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: $primary-color;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:nth-child(even) {
+        .timeline-content {
+          float: right;
+          text-align: left;
+        }
+      }
+      .timeline-content {
+        float: left;
+        width: 45%;
+        padding: 15px;
+        border: 1px solid tomato;
+        text-align: right;
+        span {
+          font-size: 20px;
+          font-weight: 600;
+          color: tomato;
+        }
+        h4 {
+          font-size: 24px;
+          line-height: 35px;
+          margin-bottom: 5px;
+          color: #333;
+        }
+        p {
+          font-size: 16px;
+          line-height: 24px;
+          color: #333;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.project-area {
+  .col-xxl-4 {
+    padding: 0;
+  }
+  .single-project {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    &:hover {
+      .project-content {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+      }
+    }
+    .project-content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(0);
+      transition: .3s;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: $black;
+        z-index: -1;
+        opacity: .75;
+      }
+      a {
+        color: $white;
+        text-align: center;
+        display: inline-block;
+        padding: 10px;
+        i {
+          display: block;
+          font-size: 18px;
+          height: 40px;
+          width: 40px;
+          border: 3px solid $white;
+          border-radius: 50%;
+          line-height: 37px;
+        }
+      }
+      h3 {
+        text-transform: capitalize;
+        color: $white;
+        font-size: 24px;
+        text-align: center;
+        span {
+          display: block;
+          text-transform: lowercase;
+          font-size: 16px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}

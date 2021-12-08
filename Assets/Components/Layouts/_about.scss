@@ -1,0 +1,35 @@
+.about-area {
+  .about-image {
+    img {
+    }
+  }
+  .about-content {
+    h3 {
+      text-transform: capitalize;
+      font-size: 50px;
+      font-weight: 700;
+      color: $heading-color;
+    }
+    h4 {
+      text-transform: capitalize;
+      font-size: 20px;
+      color: $link-color;
+    }
+    p {
+      line-height: 25px;
+    }
+    ul {
+      li {
+        text-transform: capitalize;
+        color: $link-color;
+        margin-bottom: 8px;
+        i {
+          color: $primary-color;
+          margin-right: 8px;
+        }
+      }
+    }
+    a {
+    }
+  }
+}

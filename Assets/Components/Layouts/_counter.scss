@@ -1,0 +1,29 @@
+.counter-area {
+  background-color: $black;
+  .section-title {
+    h4 {
+      color: $white;
+    }
+    p {
+      color: $white;
+    }
+  }
+  .single-counter {
+    color: $white;
+    text-align: center;
+    i {
+      background-color: $primary-color;
+      font-size: 22px;
+      padding: 15px;
+      border-radius: 3px;
+    }
+    h4 {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 50px;
+    }
+    p {
+      text-transform: capitalize;
+    }
+  }
+}

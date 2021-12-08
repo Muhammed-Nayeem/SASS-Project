@@ -1,0 +1,32 @@
+.footer-area {
+  background-color: $black;
+  color: $white;
+  h4 {
+    text-transform: capitalize;
+    font-size: 40px;
+    margin-bottom: 25px;
+    font-weight: 700;
+  }
+  ul {
+    margin-top: 40px;
+    padding-bottom: 70px;
+    li {
+      display: inline-block;
+      a {
+        display: block;
+        color: $white;
+        margin: 0 5px;
+        i {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  p {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 70px;
+    border-top: 1px solid $white;
+  }
+}

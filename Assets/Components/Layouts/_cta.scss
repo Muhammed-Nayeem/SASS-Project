@@ -1,0 +1,23 @@
+.cta-area {
+  color: $white;
+  text-align: center;
+  a {
+    color: $white;
+    transition: 0.3s;
+    &:hover {
+      color: $primary-color;
+    }
+    i {
+      font-size: 80px;
+    }
+  }
+  h4 {
+    font-size: 40px;
+    text-transform: capitalize;
+    line-height: 50px;
+    margin-top: 10px;
+  }
+  p {
+    margin: 10px 0 30px;
+  }
+}
